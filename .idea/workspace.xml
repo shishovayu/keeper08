@@ -6,10 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c9e9fe2-a07c-4640-bf52-a0f237e5d111" name="Default" comment="updated">
+    <list default="true" id="9c9e9fe2-a07c-4640-bf52-a0f237e5d111" name="Default" comment="updated_new">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/xml/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/xml/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/unnamed.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/unnamed.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/ClientServer/AccessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/ClientServer/AccessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/keeper/client/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/keeper/client/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/keeper/client/Authorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/keeper/client/Authorization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/serv/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/serv/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/serv/connectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/serv/connectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/serv/datamanager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/serv/datamanager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/serv/datamanager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="527">
+              <caret line="79" column="51" selection-start-line="79" selection-start-column="51" selection-end-line="79" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,10 +51,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/keeper/client/Authorization.java">
+        <entry file="file://$PROJECT_DIR$/Client/src/keeper/client/Admin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1666">
-              <caret line="125" column="46" selection-start-line="125" selection-start-column="46" selection-end-line="125" selection-end-column="46" />
+            <state relative-caret-position="1994">
+              <caret line="151" column="13" lean-forward="true" selection-start-line="151" selection-start-column="13" selection-end-line="151" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,6 +63,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Client/src/keeper/client/Authorization.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="127" column="43" selection-start-line="127" selection-start-column="43" selection-end-line="127" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#995#996#0" expanded="true" />
+                <element signature="e#1065#1066#0" expanded="true" />
+                <element signature="e#3927#3928#0" expanded="true" />
+                <element signature="e#3997#3998#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/src/keeper/client/Hessian.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/xml/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -70,8 +102,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/serv/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state relative-caret-position="22">
+              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/API/src/ClientServer/AccessService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,20 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/src/keeper/client/KeeperClientApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
+            <state relative-caret-position="102">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/keeper/client/Hessian.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -103,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/serv/connectionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="680">
+              <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -176,16 +208,18 @@
         <option value="$PROJECT_DIR$/Client/src/keeper/client/Cook.java" />
         <option value="$PROJECT_DIR$/Client/src/keeper/client/Barman.java" />
         <option value="$PROJECT_DIR$/Client/src/keeper/client/KeeperClientApplication.java" />
-        <option value="$PROJECT_DIR$/Client/src/keeper/client/Admin.java" />
-        <option value="$PROJECT_DIR$/API/src/ClientServer/AccessService.java" />
         <option value="$PROJECT_DIR$/Server/src/Server.java" />
-        <option value="$PROJECT_DIR$/Client/src/keeper/client/Authorization.java" />
         <option value="$PROJECT_DIR$/Server/src/connectionManager.java" />
         <option value="$PROJECT_DIR$/Server/src/datamanager.java" />
         <option value="$PROJECT_DIR$/Server/src/manager/datamanager.java" />
-        <option value="$PROJECT_DIR$/Server/src/serv/Server.java" />
-        <option value="$PROJECT_DIR$/Client/src/keeper/client/Hessian.java" />
         <option value="$PROJECT_DIR$/Server/xml/web.xml" />
+        <option value="$PROJECT_DIR$/Client/src/keeper/client/Hessian.java" />
+        <option value="$PROJECT_DIR$/Client/src/keeper/client/Admin.java" />
+        <option value="$PROJECT_DIR$/Server/src/serv/datamanager.java" />
+        <option value="$PROJECT_DIR$/Server/src/serv/Server.java" />
+        <option value="$PROJECT_DIR$/Server/src/serv/connectionManager.java" />
+        <option value="$PROJECT_DIR$/API/src/ClientServer/AccessService.java" />
+        <option value="$PROJECT_DIR$/Client/src/keeper/client/Authorization.java" />
       </list>
     </option>
   </component>
@@ -263,11 +297,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="serv" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="keeper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Server" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -334,8 +363,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545343939411" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545572577168" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -613,7 +642,7 @@
       <workItem from="1543863585816" duration="5855000" />
       <workItem from="1545168915556" duration="24706000" />
       <workItem from="1545309000607" duration="11454000" />
-      <workItem from="1545334684883" duration="5304000" />
+      <workItem from="1545334684883" duration="21964000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1545322671889</created>
@@ -622,17 +651,23 @@
       <option name="project" value="LOCAL" />
       <updated>1545322671889</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updated_new">
+      <created>1545343954735</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1545343954735</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50960000" />
+    <option name="totallyTimeSpent" value="67620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15789473" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1368421" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -641,7 +676,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.25399646" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7198381" visible="true" weight="0.5275311" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7198381" visible="true" weight="0.39786857" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49959514" weight="0.27531084" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -665,37 +700,37 @@
       <window_info anchor="right" id="Maven" order="9" weight="0.14898786" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2145749" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15789473" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="0" weight="0.3285968" />
-      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.7198381" visible="true" weight="0.45293072" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49959514" weight="0.27531084" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50040483" side_tool="true" weight="0.27531084" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49959514" weight="0.0" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="right" id="Maven" order="0" weight="0.14898786" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="right" id="Database" order="9" weight="0.32955465" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.25399646" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7198381" visible="true" weight="0.22202487" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49959514" weight="0.27531084" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50040483" side_tool="true" weight="0.27531084" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49959514" weight="0.3285968" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.3285968" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32955465" />
+      <window_info anchor="right" id="Maven" order="9" weight="0.14898786" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -703,7 +738,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+    <MESSAGE value="updated_new" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated_new" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Program.java" />
@@ -869,48 +905,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/keeper/client/Admin.java">
+    <entry file="file://$PROJECT_DIR$/Server/xml/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="147" column="36" selection-start-line="147" selection-start-column="36" selection-end-line="147" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1122#1123#0" expanded="true" />
-            <element signature="e#3451#3603#0" expanded="true" />
-            <element signature="e#3602#3603#0" expanded="true" />
-            <element signature="e#3640#3792#0" expanded="true" />
-            <element signature="e#3791#3792#0" expanded="true" />
-            <element signature="e#3826#3978#0" expanded="true" />
-            <element signature="e#3977#3978#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API/src/ClientServer/AccessService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/serv/datamanager.java">
+    <entry file="file://$PROJECT_DIR$/Client/src/keeper/client/KeeperClientApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/keeper/client/Authorization.java">
+    <entry file="file://$PROJECT_DIR$/Client/src/keeper/client/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="125" column="46" selection-start-line="125" selection-start-column="46" selection-end-line="125" selection-end-column="46" />
+        <state relative-caret-position="1994">
+          <caret line="151" column="13" lean-forward="true" selection-start-line="151" selection-start-column="13" selection-end-line="151" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -919,42 +931,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/serv/connectionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="680">
+          <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/serv/Server.java">
+    <entry file="file://$PROJECT_DIR$/Server/src/serv/datamanager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state relative-caret-position="527">
+          <caret line="79" column="51" selection-start-line="79" selection-start-column="51" selection-end-line="79" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/keeper/client/KeeperClientApplication.java">
+    <entry file="file://$PROJECT_DIR$/API/src/ClientServer/AccessService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="136">
+          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/keeper/client/Hessian.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="153">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/xml/web.xml">
+    <entry file="file://$PROJECT_DIR$/Server/src/serv/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="46" />
+        <state relative-caret-position="22">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/keeper/client/Authorization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="127" column="43" selection-start-line="127" selection-start-column="43" selection-end-line="127" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#995#996#0" expanded="true" />
+            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="e#3927#3928#0" expanded="true" />
+            <element signature="e#3997#3998#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

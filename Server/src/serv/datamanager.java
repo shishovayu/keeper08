@@ -11,6 +11,7 @@ import java.sql.*;
 public class datamanager {
     private static datamanager instance;
 
+
     private datamanager() {
     }
 
@@ -22,31 +23,50 @@ public class datamanager {
         return instance;
     }
 
-    public void login(String login, String password) {
-
+    public boolean login(String login, String password) {
 
         try {
-            Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/keeper", "postgres", "postgres");
-            Statement statement = connection.createStatement();
-
-            ResultSet resultSet = statement.executeQuery("SELECT login, password FROM public.\"User\"");
-
+            String sql ="SELECT login, password\n" +
+                    "  FROM public.\"User\";\n";
+            ResultSet resultSet = connectionManager.getInstance().select(sql);
 
             while (resultSet.next()) {
                 if (login.equals(resultSet.getString("login"))) {
                     if (password.equals(resultSet.getString("password"))) {
                         System.out.println("вход выполнен");
+                        return true;
                     }
+                    else System.out.println("Invalid password or login");
                 }
             }
         }
         catch (Exception e){
             e.printStackTrace();
         }
-
+        return true;
 
     }
+
+    public String checkUser(String login) {
+
+        try {
+            String sql ="SELECT login, user_type\n" +
+                    "  FROM public.\"User\";\n";
+            ResultSet resultSet = connectionManager.getInstance().select(sql);
+            while (resultSet.next()) {
+                if (login.equals(resultSet.getString("login"))) {
+                    return resultSet.getString("user_type");
+                }
+            }
+            //else return "No users";
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return "No users";
+
+    }
+
+
 
     public void createUser(User user) throws SQLException {
 

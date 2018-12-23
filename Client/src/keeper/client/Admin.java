@@ -70,9 +70,9 @@ public class Admin extends JFrame {
         JButton btn_c = new JButton("C");
 
         JComboBox type = new JComboBox();
-        type.addItem("Barman");
-        type.addItem("Waiter");
-        type.addItem("Cook");
+        type.addItem("barman");
+        type.addItem("waiter");
+        type.addItem("cook");
         rightPanel.add(new JLabel(" "));
         rightPanel.add(type);
         rightPanel.add(new JLabel(" "));

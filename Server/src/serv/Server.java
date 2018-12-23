@@ -13,8 +13,14 @@ import java.sql.SQLException;
 
 public class Server extends HessianServlet implements AccessService {
 
-    public void login(String login, String password) {
-        datamanager.getInstance().login(login, password);
+    public boolean login(String login, String password) {
+        boolean authorization = datamanager.getInstance().login(login, password);
+        return authorization;
+    }
+
+    public String checkUserType(String login) throws SQLException {
+        String userType = datamanager.getInstance().checkUser(login);
+        return userType;
     }
 
 

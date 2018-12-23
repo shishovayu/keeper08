@@ -120,12 +120,24 @@ public class Authorization extends JFrame {
 
                 //datamanager.getInstance().login(tf1.getText(), tf2.getText());
 
-                Hessian hessian = new Hessian();
+
                 try {
-                     String serverAddress = "http://localhost:8080/";
-                     HessianProxyFactory factory = new HessianProxyFactory();
-                     AccessService accessService = (AccessService) factory.create(AccessService.class, serverAddress + "server");
-                     accessService.login(tf1.getText(), tf2.getText());
+                    Hessian hessian = new Hessian();
+                    boolean authorization = hessian.Hessian().login(tf1.getText(), tf2.getText());
+                    //String userType = hessian.Hessian().checkUserType(tf1.getText());
+                    if(authorization==true  )
+                    {
+                        //new Admin(userType);
+                        System.out.println("OKAY");
+                        dispose();
+
+                    }
+                    else System.out.println("Invalid password or login");
+
+
+
+
+
                      //accessService.datamanger();
 
                 } catch (IOException e1) {
@@ -133,14 +145,7 @@ public class Authorization extends JFrame {
                 }
 
 
-                dispose();
 
-                if (tf1.getText().startsWith("1"))
-                    new Admin("keeper: Admin");
-                if(tf1.getText().startsWith("2"))
-                    new Barman("keeper: Barman");
-                if(tf1.getText().startsWith("3"))
-                    new Cook("keeper: Cook");
             }
 
             //new Cook("keeper");

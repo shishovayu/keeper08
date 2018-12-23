@@ -2,10 +2,7 @@ package serv;// Source code recreated from a .class file by IntelliJ IDEA
 // (powered by Fernflower decompiler)
 //
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class connectionManager {
     static connectionManager instance;
@@ -40,5 +37,16 @@ public class connectionManager {
         statement.execute(sql);
         statement.close();
         connection.close();
+    }
+
+
+
+    public ResultSet select(String sql) throws SQLException{
+            Connection connection = createConnection();
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(sql);
+            statement.close();
+            connection.close();
+            return resultSet;
     }
 }
