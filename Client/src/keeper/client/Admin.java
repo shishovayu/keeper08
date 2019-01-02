@@ -147,7 +147,7 @@ public class Admin extends JFrame {
             try {
                 AccessService accessService = hessian.Hessian();
                 accessService.createUser(Integer.parseInt(userID.getText()), login.getText(), password.getText(), type.getSelectedItem().toString());
-            } catch (IOException | SQLException e1) {
+            } catch (IOException  e1) {
                 e1.printStackTrace();
             }
 

@@ -118,33 +118,40 @@ public class Authorization extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e)  {
 
-                //datamanager.getInstance().login(tf1.getText(), tf2.getText());
-
-
                 try {
                     Hessian hessian = new Hessian();
                     boolean authorization = hessian.Hessian().login(tf1.getText(), tf2.getText());
-                    //String userType = hessian.Hessian().checkUserType(tf1.getText());
+
                     if(authorization==true  )
                     {
                         //new Admin(userType);
                         System.out.println("OKAY");
                         dispose();
+                        String text = tf1.getText();
+                        String userType = hessian.Hessian().checkUserType(text);
+
+                        if(userType.equals("admin"))
+                        {
+                            new Admin("keeper:admin");
+                        }
+                        if(userType.equals("barman"))
+                        {
+                            new Barman("keeper:barman");
+                        }
+                        if(userType.equals("cook"))
+                        {
+                            new Cook("keeper: cook");
+                        }
 
                     }
                     else System.out.println("Invalid password or login");
 
 
-
-
-
                      //accessService.datamanger();
 
-                } catch (IOException e1) {
+                } catch (IOException | SQLException e1) {
                     e1.printStackTrace();
                 }
-
-
 
             }
 
