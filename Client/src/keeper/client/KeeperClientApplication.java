@@ -8,8 +8,7 @@ package keeper.client;
 
 
 public class KeeperClientApplication  {
-//    public KeeperClientApplication() {
-//    }
+
 
     public static void main(String[] args)   {
 

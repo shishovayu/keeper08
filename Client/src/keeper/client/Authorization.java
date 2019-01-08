@@ -6,11 +6,7 @@
 package keeper.client;
 
 
-import ClientServer.AccessService;
-import com.caucho.hessian.client.HessianProxyFactory;
-
 import java.awt.BorderLayout;
-import java.awt.Component;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -146,20 +142,15 @@ public class Authorization extends JFrame {
                     }
                     else System.out.println("Invalid password or login");
 
-
-                     //accessService.datamanger();
-
                 } catch (IOException | SQLException e1) {
                     e1.printStackTrace();
                 }
 
             }
 
-            //new Cook("keeper");
-
         });
         this.pack();
-        this.setLocationRelativeTo((Component)null);
+        this.setLocationRelativeTo(null);
         this.setVisible(true);
     }
 }

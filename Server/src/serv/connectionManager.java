@@ -39,14 +39,4 @@ public class connectionManager {
         connection.close();
     }
 
-
-
-//    public ResultSet select(String sql) throws SQLException{
-//            Connection connection = createConnection();
-//            Statement statement = connection.createStatement();
-//            ResultSet resultSet = statement.executeQuery(sql);
-//            statement.close();
-//            connection.close();
-//            return resultSet;
-//    }
 }

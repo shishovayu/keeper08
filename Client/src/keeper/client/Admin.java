@@ -6,8 +6,6 @@
 package keeper.client;
 
 import ClientServer.AccessService;
-import keeper.api.User;
-
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -22,7 +20,7 @@ import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import javax.swing.JTextField;
 import java.io.IOException;
-import java.sql.*;
+
 
 public class Admin extends JFrame {
     private JTextField current = new JTextField();
@@ -132,17 +130,6 @@ public class Admin extends JFrame {
 
         ok.addActionListener(l -> {
 
-            //try {
-
-            //User user = new User();
-            //int bufID = Integer.parseInt(userID.getText());
-            //String bufType = type.getSelectedItem().toString();
-
-//            user.setUserID(Integer.parseInt(userID.getText()));
-//            user.setPosition(type.getSelectedItem().toString());
-//            user.setPassword(password.getText());
-//            user.setLogin(login.getText());
-
             Hessian hessian = new Hessian();
             try {
                 AccessService accessService = hessian.Hessian();
@@ -150,14 +137,6 @@ public class Admin extends JFrame {
             } catch (IOException  e1) {
                 e1.printStackTrace();
             }
-
-            //datamanager.getInstance().createUser(user);
-
-            // }
-//            catch (SQLException e) {
-//                e.printStackTrace();
-//            }
-//        });
 
         });
     }

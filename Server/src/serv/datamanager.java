@@ -1,15 +1,8 @@
-package serv;// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by Fernflower decompiler)
-//
+package serv;
 
-import keeper.api.Position;
 import keeper.api.User;
-
-
-import javax.swing.*;
-import javax.swing.tree.DefaultMutableTreeNode;
-import java.io.Serializable;
 import java.sql.*;
+import java.util.ArrayList;
 
 public class datamanager {
     private static datamanager instance;
@@ -35,8 +28,9 @@ public class datamanager {
     }
 
 
-    public DefaultMutableTreeNode getNodes (DefaultMutableTreeNode node, String position)  {
+    public ArrayList<String> getNodes (String position)  {
 
+        ArrayList nodes = new ArrayList<String>();
 
         try {
             Class.forName("org.postgresql.Driver");
@@ -45,48 +39,21 @@ public class datamanager {
             ResultSet resultSet = statement.executeQuery("SELECT position_name\n" +
                     "  FROM public.\"Position\"" + " WHERE type_1 =" + "\'"+position+"\'");
 
-            node = new DefaultMutableTreeNode(position);
 
             while (resultSet.next()) {
                 String str = resultSet.getString("position_name");
-
-                node.add(new DefaultMutableTreeNode(str));
+                nodes.add(str);
             }
+            //return nodes;
         }
         catch (ClassNotFoundException e) {
         e.printStackTrace();
         } catch (SQLException e) {
         e.printStackTrace();
     }
-        return node;
+        return nodes;
 
     }
-//    public JTree getNodes (String position) throws SQLException {
-//        DefaultMutableTreeNode menu = new DefaultMutableTreeNode("MENU");
-//        DefaultMutableTreeNode kitchen = new DefaultMutableTreeNode("KITCEN");
-//        DefaultMutableTreeNode bar = new DefaultMutableTreeNode("BAR");
-//        JTree tree = new JTree(menu);
-//        menu.add(kitchen);
-//        menu.add(bar);
-//
-//        try {
-//            Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/keeper", "postgres", "postgres");
-//            Statement statement = connection.createStatement();
-//            ResultSet resultSet = statement.executeQuery("SELECT position_name\n" +
-//                    "  FROM public.\"Position\"" + " WHERE type_1 =" + "\'" + position + "\'");
-//
-//            while (resultSet.next()) {
-//                //DefaultMutableTreeNode url = new DefaultMutableTreeNode(resultSet.getString("colNode"));
-//                //mutableTreeNode.add(url);
-//                 kitchen.add(new DefaultMutableTreeNode(resultSet.getString("position_name")));
-//                //System.out.println(resultSet.getString("position_name"));
-//            }
-//        }
-//        catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return tree;
-//    }
 
     public boolean login(String login, String password) throws SQLException {
 
@@ -126,7 +93,6 @@ public class datamanager {
 
                 return str;
             }
-            //else return "No users";
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -149,21 +115,4 @@ public class datamanager {
 
 
 
-    public void updateUsers(User user) {
-    }
-
-    public void deleteUsers(User user) {
-    }
-
-    public void createPosition(Position position) throws SQLException {
-        int id = position.getPosition_id();
-        String name = position.getPosition_name();
-        int price = position.getPrice();
-    }
-
-    public void updatePosition(Position position) {
-    }
-
-    public void deletePosition(Position position) {
-    }
 }
